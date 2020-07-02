@@ -1,7 +1,9 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet } from 'react-native';
+
 import { Colors } from './src/styles';
 import { SignInFormContainer } from './src/signIn/SignInFormContainer';
+import { SignUpFormContainer } from './src/signUp/SignUpFormContainer';
 
 const App = () => {
   return (
@@ -10,6 +12,7 @@ const App = () => {
       <SafeAreaView style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <SignInFormContainer />
+          <SignUpFormContainer />
         </ScrollView>
       </SafeAreaView>
     </>
